@@ -21,18 +21,18 @@ The primary objective of this project was to build an accurate, scalable, and de
 Examination of the target variable distribution revealed a severe class imbalance: only 473 transactions (0.167%) were fraudulent, while the overwhelming majority were legitimate.
 This imbalance is typical of real-world fraud datasets and, if unaddressed, would cause models to be biased toward predicting the majority class.
 
-![Distribution of Transaction classes](images\Distribution%20of%20Transaction%20Classes.png)
+![Distribution of Transaction classes](https://github.com/Dnielrojis/fraud_detection_system/blob/main/images/Distribution%20of%20Transaction%20Classes.png)
 
 ### Feature Correlation
 A Seaborn correlation matrix was used to identify relationships between each feature and the target Class variable. Several PCA-derived features (V1–V28) demonstrated meaningful positive and negative correlations with the target, indicating their discriminative utility. The raw Time and Amount fields showed weaker direct correlations but were retained and preprocessed.
 
-![Distribution of Transaction classes](images\Seaborn%20Correlation%20Heatmap.png)
+![Distribution of Transaction classes](https://github.com/Dnielrojis/fraud_detection_system/blob/main/images/Seaborn%20Correlation%20Heatmap.png)
 
 ### Feature Distribution Analysis
 Histograms were used to assess the skewness of the Amount and Time features:
 - **Amount:** Highly right-skewed, with the vast majority of transactions clustered at lower values. Standard scaling was determined to be necessary before model training.
 
-    ![Distribution of Tranasction Amounts](images\Distribution%20of%20Amount.png)
+    ![Distribution of Tranasction Amounts](https://github.com/Dnielrojis/fraud_detection_system/blob/main/images/Distribution%20of%20Amount.png)
 - **Time:** Moderately right-skewed. Scaling was similarly required, though the distribution was less extreme than Amount.
 
     ![Distribution of Tranasction Time](images\Distribution%20of%20Time.png)
