@@ -35,17 +35,17 @@ Histograms were used to assess the skewness of the Amount and Time features:
     ![Distribution of Tranasction Amounts](https://github.com/Dnielrojis/fraud_detection_system/blob/main/images/Distribution%20of%20Amount.png)
 - **Time:** Moderately right-skewed. Scaling was similarly required, though the distribution was less extreme than Amount.
 
-    ![Distribution of Tranasction Time](images\Distribution%20of%20Time.png)
+    ![Distribution of Tranasction Time](https://github.com/Dnielrojis/fraud_detection_system/blob/main/images/Distribution%20of%20Time.png)
 
 ### Temporal and Monetary Behaviour of Fraud
 Density plots were used to contrast the temporal and monetary patterns of fraudulent versus legitimate transactions:
 - **Time:** Visible and distinct peaks were observed for both classes, confirming that time of transaction carries predictive signal for fraud detection.
 
-    ![Distribution of Transaction Time: Normal vs Fraud](images\Density%20Plot%20for%20Transaction%20time%20Against%20Class.png)
+    ![Distribution of Transaction Time: Normal vs Fraud](https://github.com/Dnielrojis/fraud_detection_system/blob/main/images/Density%20Plot%20for%20Transaction%20time%20Against%20Class.png)
  
 - **Amount:** The distributions for fraudulent and legitimate transactions were broadly similar, with only minor differences in peak density, suggesting that transaction amount alone is insufficient as a discriminator.
 
-    ![Distribution of Transaction Time: Normal vs Fraud](images\Density%20Plot%20for%20Transaction%20Amount%20Against%20Class.png)
+    ![Distribution of Transaction Time: Normal vs Fraud](https://github.com/Dnielrojis/fraud_detection_system/blob/main/images/Density%20Plot%20for%20Transaction%20Amount%20Against%20Class.png)
 
 ## Data Preprocessing
 Prior to model training, the following preprocessing steps were applied:
@@ -73,7 +73,7 @@ The **Random Forest (SMOTE)** model was selected as the final production model.
 
 ### Evaluation Visualization
 
-![Precision-Recall Curve Comparison](images\Precision-Recall%20Curve%20Comparison.png)
+![Precision-Recall Curve Comparison](https://github.com/Dnielrojis/fraud_detection_system/blob/main/images/Precision-Recall%20Curve%20Comparison.png)
 
 The highlighted row below (Random Forest - SMOTE) represents the selected final model.
 | Metric | Score |
